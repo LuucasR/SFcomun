@@ -1,0 +1,446 @@
+@font-face{
+    font-family: bork;
+    src:url(./recursos/fuente/bork.otf);
+}
+@font-face{
+    font-family: AlbertusNova;
+    src:url(./recursos/fuente/AlbertusNova.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: rgb(204, 51, 226);
+    background-image: url(./recursos/Backgrouund.png);
+    background-repeat: no-repeat;
+    background-size:100% 100% ;
+    background-attachment: fixed;
+    height: 100%;
+}
+
+#logo  {
+    position: absolute;
+    margin: 20px 70px;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    text-decoration: none;
+}
+nav ul li .uno {
+    text-decoration: none;
+    list-style: none;
+    color: rgb(117, 33, 130);
+}
+nav ul li{
+    margin: 35px 20px;
+    color: blueviolet;
+    font-size: 40px;
+    text-decoration: none;
+    list-style: none;
+    font-family: AlbertusNova;
+}
+.boton{
+position: absolute;
+    right: 70px; 
+    top: 50px;
+}
+#contacto {
+background-color: rgb(0, 230, 46);
+padding: 10px 50px;  
+border-radius: 20px;
+font-size: 25px;
+color: white;
+text-decoration: none;
+font-family: bork;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap-reverse;
+    gap: 50px;
+    padding: 20px 0px 100px 0px;
+}
+
+.Cuadrouno{
+    width: 50%;
+   height: 100%;
+}
+
+.flex h1{
+    font-size: 80px;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    font-family: bork;
+}
+.flex p{
+    font-size: 25px;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 60%;
+    margin: 10px auto 50px auto;
+    font-family: AlbertusNova;
+    word-spacing: 0.29em;
+}
+.Cuadrodos{
+    width: 46%;
+    height: 30%;
+    text-align: center;
+
+}
+
+.Cuadrodos img{
+    width: auto;
+}
+.flex-botones{
+    display: flex;
+    gap: 20px;
+    margin: 30px 0;
+    justify-content: center;
+}
+
+.flex .botonuno {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    background-color: rgb(0, 230, 46);
+    padding: 5px 30px;
+    border-radius: 10px;
+    font-size: 30px;
+    font-family: bork;
+}
+
+.flex .botonuno a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+
+}
+
+.flex .botondos {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    background-color: rgb(0, 230, 46);
+    padding:  5px 30px;
+    border-radius: 10px;
+    font-size: 30px;
+    font-family: bork;
+}
+
+.flex .botondos a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    background-color: rgb(0, 230, 46);
+
+}
+
+.flex-botones img{
+    width: 38px;
+margin: 0 0 0 10px;
+float: right;
+}
+ /* MENU DEL RESPONSIVE */
+ .nav-oculto{
+    display: none;
+ }
+
+@media (max-width: 1250px ) {
+
+    #logo{
+        display: none;
+    }
+    .Cuadrouno{
+        width: 70%;
+       height: 100%;
+    }
+    .flex h1{
+    font-size: 65px;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+    .flex p{
+        width: 80%;
+    }
+
+    /* RESPONSIVE MENU */
+.nav-comun{
+        display: none;
+    }
+    .blackmenu{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.5);
+        display: none;
+    }
+    .contenedordelineas{
+        position: relative;
+top: 30px;
+cursor: pointer;
+    }
+    .nav-oculto{
+        display: flex;
+        position: relative;
+        left:-5000px ;
+     }
+     
+     .nav-oculto ul {
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        width: 30%;
+        border-radius: 30px;
+        margin:  0px 0 0 50px;
+     }
+
+     .nav-oculto li {
+    font-size: 20px;
+    margin: 0;
+    padding: 10px;
+     }
+
+    .Cuadrodos img{
+   margin: 100px 0 0 0;
+    }
+
+    .lineauno{
+        position: relative;
+        width: 25px;
+        height: 3px;
+        background-color: rgb(80, 8, 114);
+        margin: 0 0 4px 15px;
+    }
+
+    .lineados{
+        position: relative;
+        width: 25px;
+        height: 3px;
+        background-color: rgb(80, 8, 114);
+        margin: 0 0 4px 15px;
+        opacity: 1;
+    }
+
+    .lineatres{
+        position: relative;
+        width: 25px;
+        height: 3px;
+        background-color: rgb(80, 8, 114);
+        margin: 0 0 4px 15px;
+    }
+
+.x {
+    width: 40px;
+    border-radius: 40px;
+    cursor: pointer;
+}
+.x .uno{
+    width: 25px;
+    height: 3px;
+    background-color: rgb(255, 0, 0);
+    margin: 5px;
+    transform: translatey(8px) rotate(45deg);
+    cursor: pointer;
+}
+
+.x .dos{
+    width: 25px;
+    height: 3px;
+    background-color: rgb(255, 0, 0);
+    margin: 5px;
+    transform: rotate(-45deg);
+    cursor: pointer;
+}
+  }
+
+  @media (max-width: 1050px){
+    #contacto {
+        background-color: rgb(0, 230, 46);
+        padding: 10px 40px;  
+        border-radius: 20px;
+        font-size: 20px;
+        color: white;
+        text-decoration: none;
+        font-family: bork;
+ }
+
+.Cuadrodos img{
+width: 80%;
+        }
+        #logo{
+            display: none;
+        }
+.Cuadrouno p, h1 {
+    font-size: 15px;
+}
+
+.flex .botondos {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    background-color: rgb(0, 230, 46);
+    padding:  10px 50px;
+    border-radius: 10px;
+    font-size: 0px;
+    font-family: bork;
+    margin: 22px 0;
+}
+
+.flex .botondos a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    background-color: rgb(0, 230, 46);
+
+}
+.flex-botones img{
+    width: 58px;
+margin: 0 auto;
+float: right;
+}
+
+.flex .botonuno {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    background-color: rgb(0, 230, 46);
+    padding:  10px 50px;
+    border-radius: 10px;
+    font-size: 0px;
+    font-family: bork;
+    margin: 22px 0;
+}
+
+.flex .botonuno a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    background-color: rgb(0, 230, 46);
+
+}
+}
+
+/* VERSION MOBIL */
+@media (max-width: 440px) {
+header{
+    background-color: rgb(0, 0, 0);
+    background-image: url(./recursos/mobile/fondomobil.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: rgb(197, 50, 218);
+}
+.nav-oculto{
+    position: absolute;
+    width: 100%;
+    top: 40px;
+}
+.nav-oculto ul{
+    background-image: url(./recursos/mobile/navback.jpeg);
+    width: 80%;
+    height: auto;
+    padding: 20px auto;
+    box-shadow: 5px 10px 5px rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.nav-oculto ul li a{
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+.nav-oculto ul li a:hover{
+    background-color: rgba(0, 0, 0, 0.233);
+}
+header .Cuadrouno{
+    display: none;
+}
+header .Cuadrodos{
+    display: none;
+}
+header .boton{
+    display: none;
+}
+header .flex{
+    display: none;
+}
+.headermobil {
+    width: 100%;
+    height: 100vh;
+}
+.headermobil img{
+    width: 80%;
+    margin: auto 40px;
+    border-radius: 60px;
+   
+}
+.headermobil .contenedorredes{
+    width: 80%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 0 auto;
+}
+
+.headermobil .contenedorredes .discordmobil{
+    background-color:rgb(20, 12, 35);
+    border-radius: 50px;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.headermobil .contenedorredes .discordmobil:hover{
+    background-color: rgba(133, 255, 88, 0.541);
+}
+.headermobil .contenedorredes .discordmobil img{
+    width: 45%;
+    margin: 0 auto;
+}
+.headermobil .contenedorredes .telegrammobil{
+    background-color: rgb(20, 12, 35);
+    width: 30%;
+    height: 100%;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.headermobil .contenedorredes .telegrammobil:hover{
+    background-color: rgba(133, 255, 88, 0.541);
+}
+.headermobil .contenedorredes .telegrammobil img{
+    width: 45%;
+    margin: 0 auto;
+    }
+}
